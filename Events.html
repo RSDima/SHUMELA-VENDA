@@ -49,57 +49,62 @@
             </div>
         </div>
     </nav>
-    <!-- Header-->
-    <header class="bg-dark py-5">
-        <div class="container px-5">
-            <div class="row gx-5 align-items-center justify-content-center">
-                <div class="col-lg-8 col-xl-7 col-xxl-6">
-                    <div class="my-5 text-center text-xl-start">
-                        <h1 class="display-5 fw-bolder text-white mb-2">We are Foundational Digital Capability Research-Modelling and Simulation Domain (FDCR M&S)</h1>
-                        <p class="lead fw-normal text-white-50 mb-4">Welcome to FDCR Modelling and Simulation Domain! Where we aim to get you started in using advanced modelling techniques such as machine learning to enhance traditional Modelling and Simulation techniques in what is called data-driven modelling and simulation</p>
-                        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-                            <a class="btn btn-outline-light btn-lg px-4" href="learnmore.html">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="images/Untitled_28.png" alt="..." /></div>
-            </div>
+    <!-- Add content for events page -->
+    <section class="container py-5">
+        <h2 class="text-center mb-4">Events</h2>
+        <!-- Search bar -->
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Search events..." aria-label="Search events" aria-describedby="button-addon2">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
         </div>
-    </header>
-    <!-- Testimonial section-->
-    <div class="py-5 bg-light">
-        <div class="container px-5 my-5">
-            <div class="row gx-5 justify-content-center">
-                <div class="col-lg-10 col-xl-7">
-                    <div class="text-center">
-                        <div class="fs-4 mb-4 fst-italic">"Empowering Innovation, Shaping Tomorrow: South Africa's FDCR Modelling and Simulation Domain Leading the Multiscale Modelling and Data-Driven Future."</div>
-                        <div class="d-flex align-items-center justify-content-center">
-                            <img src="images/Untitled_26.png" alt="..." />
-                        </div>
+        <!-- Event cards -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <!-- Sample event card -->
+            <div class="col">
+                <div class="card">
+                    <img src="event1.jpg" class="card-img-top" alt="Event 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Event 1</h5>
+                        <p class="card-text">Event description goes here.</p>
+                        <p class="card-text"><small class="text-muted">Date and time</small></p>
                     </div>
                 </div>
             </div>
+            <!-- Repeat for other events -->
         </div>
-    </div>
+    </section>
 </main>
-<!-- Footer-->
-<footer class="bg-dark py-4 mt-auto">
-    <div class="container px-5">
-        <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-            <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; CSIR 2024</div></div>
-            <div class="col-auto">
-                <!-- <a class="link-light small" href="#!">Privacy</a>
-                <span class="text-white mx-1">&middot;</span>
-                <a class="link-light small" href="#!">Terms</a>
-                <span class="text-white mx-1">&middot;</span>
-                <a class="link-light small" href="#!">Contact</a> -->
+</body>
+<section class="region region-brands">
+    <div id="block-companylogos" class="block block-block-content block-block-content4f032544-7aeb-42fc-a5c4-5689cc32dcac">
+        <div class="container px-5 my-5">
+            <div class="text-center">
+                <div class="d-flex justify-content-center"> <!-- Changed align-items-center to justify-content-center -->
+                    <img src="images/Untitled_26.png" alt="..." width="600" height="100"/>
+                </div>
             </div>
         </div>
     </div>
-</footer>
-<!-- DRS core JS-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-<!-- Core theme JS-->
-<script src="js/scripts.js"></script>
-</body>
+</section>
+        </main>
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Your Website 2023</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
