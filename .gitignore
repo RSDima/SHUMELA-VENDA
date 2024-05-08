@@ -2,4 +2,7 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
+/.vs/slnx.sqlite
+/.vs/SHUMELA-VENDA/config
+/.vs/SHUMELA-VENDA/FileContentIndex/b1bc891b-7aa4-455f-a574-b9eb97ddbdda.vsidx
 /.vs/SHUMELA-VENDA/FileContentIndex
