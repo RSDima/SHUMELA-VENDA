@@ -63,32 +63,74 @@
                     <a href="higherinstitutions.html" target="">
                         <button class="message-button">Return to main page</button>
                     </a>
-                    <h2 style="color:darkblue; text-align: center;">Members List</h2>
+                    <h2 style="color: #000; text-align: center; font-size: 40px; font-family: Poppins; font-weight: 400; letter-spacing: 1px; margin-left: 25%;">Group Members</h2>
                     <div class="horizontal-line"></div>
 
                     <div class="container">
                         <div class="row">
                             <div class="col-md-4 mt-1">
-                                <!--<div class="card-sidebar">
+                                <div class="card-sidebar">
                                     <div class="card-body">
                                         <img src="images/team/Prof Regina Maphanga.jpg" class="rounded-circle" width="150">
                                         <div class="mt-3">
                                             <h3> Prof Regina Maphanga</h3>
-                                            <h5 style="font-family: Arial, Helvetica, sans-serif;">Group Leader</h5>
+                                            <h5>Group Leader</h5>
                                         </div>
                                     </div>
-                                </div>-->
+                                </div>
                             </div>
                             <div class="col-md-8 mt-1">
-                                <!--add list of members with pics-->
+                                <!--table of members-->
                                 <div class="container">
-                                    <h3>Name</h3>
-                                    <h3>Field of study</h3>
-                                    <h3>Qualifications</h3>
-                                    <h3>Position</h3>
-                                    <h3>Projects</h3>
+                                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+                                    <style>
+                                        th{ 
+                                            color:#fff;
+                                        }
+                                        
+                                    </style>
+                                    <table class="table table-striped">
+                                        <tr  class="bg-info">
+                                            <th>Name</th>
+                                            <th>Position</th>
+                                            <th>Field of study</th>
+                                            <th>Qualifications</th>
+                                            <th>Projects</th>
+                                        </tr>
+
+                                        <tbody id="myTable">
+                                            
+                                        </tbody>
+                                    </table>
+                                    <script>
+                                        var myArray = [
+                                            {'name':'Prof Regina Maphanga', 'pos':'Leader', 'fos':'...', 'qualifications':'...', 'projects':'...'},
+                                            {'name':'Dr Ridhwaan Suliman', 'pos':'Senior Researcher', 'fos':'...', 'qualifications':'...', 'projects':'...'},
+                                            {'name':'Dr David Tshwane', 'pos':'Senior Researcher', 'fos':'...', 'qualifications':'...', 'projects':'...'},
+                                            {'name':'Steve Dima', 'pos':'Senior Researcher', 'fos':'...', 'qualifications':'...', 'projects':'...'},
+                                            {'name':'Farisha Panday', 'pos':'Senior Researcher', 'fos':'...', 'qualifications':'...', 'projects':'...'},
+                                            {'name':'Prettier Maleka', 'pos':'Researcher', 'fos':'...', 'qualifications':'...', 'projects':'...'},
+                                            {'name':'Thabani Ngcobo', 'pos':'Candidate Researcher', 'fos':'...', 'qualifications':'...', 'projects':'...'},
+                                            {'name':'Lethabo Mogakane', 'pos':'Candidate Researcher', 'fos':'...', 'qualifications':'...', 'projects':'...'},
+                                        ]
+                                        buildTable(myArray)
+                                        function buildTable(data){
+                                            var table = document.getElementById('myTable')
+
+                                            for(var i=0; i<data.length; i++){
+                                                var row = `<tr>
+                                                                <td>${data[i].name}</td>
+                                                                <td>${data[i].pos}</td>
+                                                                <td>${data[i].fos}</td>
+                                                                <td>${data[i].qualifications}</td>
+                                                                <td>${data[i].projects}</td>
+                                                        </tr>`
+                                                table.innerHTML += row
+                                            }
+                                        }
+                                    </script>
                                 </div>
-                                
                             </div>
                         </div>
                     </div>
