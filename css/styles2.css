@@ -1,0 +1,168 @@
+/*Montserrat font import*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", "sans-serif";
+}
+
+.card-heading {
+  text-align: center;
+}
+
+/*for horizontal lines*/
+.horizontal-line {
+  width: 100%;
+  height: 0.5px;
+  border-top: 0.8px solid #6c757d;
+  margin: 2 auto; /* Centered horizontally */
+  }
+  /*for member profiles*/
+.profile-image {
+  border-radius: 50%;
+  width: 100px; 
+  height: 100px;
+  object-fit: cover; /* Ensures the image covers the entire area */
+  margin: 5px;
+  }
+
+.message-button{
+  font-size: 1.25rem;
+  padding: 10px 35px;
+  color: darkblue;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid transparent;
+  transition: 0.2s ease;
+}
+
+.message-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #fff;
+  color: navajowhite;
+}
+/*styles for sliding cards*/
+
+.cards-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.card-content {
+  display: none;
+  color: black;
+}
+#cb01,#cb02,#cb03,#cb04,#cb05,#cb06{
+  display: none;
+}
+#cb01:checked ~ .card-content,
+#cb02:checked ~ .card-content,
+#cb03:checked ~ .card-content,
+#cb04:checked ~ .card-content,
+#cb05:checked ~ .card-content,
+#cb06:checked ~ .card-content {
+  display: block;
+}
+
+#cb01:checked ~ label,
+#cb02:checked ~ label,
+#cb03:checked ~ label,
+#cb04:checked ~ label,
+#cb05:checked ~ label,
+#cb06:checked ~ label {
+  display: none;
+}
+.label {
+  display: inline-block;
+}
+
+.slider-wrapper {
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 50px 70px 55px;
+}
+
+.card-list .card-item {
+  color:darkblue;
+  width:400px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: rgba(52, 53, 65, 0);
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+}
+
+.card-list .card-item .group-img {
+ width: 150px;
+ height: 150px;
+ margin-bottom: 40px;
+ object-fit: cover;
+ padding: 2px;
+}
+
+.card-list .card-item .profile-description{
+  font-size: 1.15rem;
+  color: #000;
+  font-weight: 500;
+  margin: 14px 0 40px;
+}
+
+.card-list .card-item .message-button{
+  font-size: 1.25rem;
+  padding: 10px 35px;
+  color: darkblue;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid transparent;
+  transition: 0.2s ease;
+}
+
+.card-list .card-item .message-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #fff;
+  color: navajowhite;
+}
+
+.slider-wrapper .swiper-pagination-bullet {
+  background: darkblue;
+  height: 15px;
+  width: 15px;
+}
+
+.pagination-container {
+  margin: 20px;
+  padding: 5px;
+  background-color: #fff;
+}
+
+.slider-wrapper .swiper-slide-button {
+  color: darkblue;
+  margin-top: -50px;
+  transition: 0.2s ease;
+  
+}
+
+.slider-wrapper .swiper-slide-button:hover {
+  color: darkblue;
+}
+
+@media (max-width: 800px) {
+  .slider-wrapper {
+    margin: 0 12px 38px;
+  }
+}
+
+.slider-wrapper .swiper-slide-button {
+  display: none;
+}
